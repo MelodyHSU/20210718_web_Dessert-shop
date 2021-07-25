@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    background: rgb(163, 237, 255);
+    box-shadow: 0 5px 10px rgb(109, 173, 189);
+
+}
