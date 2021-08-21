@@ -7,8 +7,31 @@
 
 nav {
     display: grid;
-    grid-template-columns: 20% 70% 10%;
+    grid-template-columns: 20% 60% 20%;
     background: rgb(163, 237, 255);
     box-shadow: 0 5px 10px rgb(109, 173, 189);
+    padding: 20px 30px;
+    align-items: center;
 
+}
+#logo img {
+   width: 70px;
+}
+
+#link a {
+    padding: 0 30px ;
+    /* td 文字樣式 刪除底線 */
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    font-size: 25px;
+}
+
+#link a:hover {
+color: rgb(255, 161, 197);
+}
+
+#social img {
+    width: 50px;
 }
