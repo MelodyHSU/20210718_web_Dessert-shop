@@ -5,6 +5,7 @@
     
 }
 
+/* 導覽列 */
 nav {
     display: grid;
     grid-template-columns: 20% 60% 20%;
@@ -34,4 +35,39 @@ color: rgb(255, 161, 197);
 
 #social img {
     width: 50px;
+}
+
+/* 商品類型 */
+/* 把排版分成左右兩側 */
+/* 元素1 > 元素2 */
+/* 元素1 裡面 第1層的 元素2 */
+#products {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#products > div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+/* 圖片原比例 */
+#products .pic img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* 文字間距 */
+#products .text {
+    padding: 150px 20px 0 0 ;
+}
+
+#products .text h1 {
+    padding: 30px 0;
+}
+
+#products .text p {
+    width: 300px;
+    line-height: 2;
 }
