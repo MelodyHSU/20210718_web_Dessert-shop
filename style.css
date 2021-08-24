@@ -48,7 +48,7 @@ color: rgb(255, 161, 197);
 
 #products > div {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 60%;
 }
 
 /* 圖片原比例 */
@@ -70,4 +70,19 @@ color: rgb(255, 161, 197);
 #products .text p {
     width: 300px;
     line-height: 2;
+}
+
+/* nth-child 指同一階層的第N個元素 數字 奇數odd 偶數even*/
+#products > div:nth-child(2) {
+    /* gta 根據區域做欄位切割 */
+    grid-template-areas: "pic text" ;
+    grid-template-columns: 60% 40%;
+}
+
+/* grid-area 格線區域:名稱 */
+#products > div:nth-child(2) .text {
+    grid-area: text;
+}
+#products >div:nth-child(2) .pic {
+    grid-area: pic;
 }
