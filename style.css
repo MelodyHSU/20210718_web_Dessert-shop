@@ -70,6 +70,7 @@ color: rgb(255, 161, 197);
 #products .text p {
     width: 300px;
     line-height: 2;
+    margin-bottom: 20px;
 }
 
 /* nth-child 指同一階層的第N個元素 數字 奇數odd 偶數even*/
@@ -85,4 +86,23 @@ color: rgb(255, 161, 197);
 }
 #products >div:nth-child(2) .pic {
     grid-area: pic;
+}
+
+/* 按鈕樣式 */
+.button {
+    padding: 8px 30px;
+    /* 外框線 */
+    border: 1px solid rgb(172, 108, 185);  
+    /* 底線 */
+    text-decoration: none;
+    color: rgb(169, 103, 199);
+    transition: 0.5s;
+    font-weight: 500;
+    letter-spacing: 10px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: rgb(142, 18, 158);
+    color: rgb(255, 255, 255);
 }
